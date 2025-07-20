@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<h1>JS CLASS</h1>
+<p id="e1"></p>
+<p id="e2"></p>
+
+<script>
+  class emp{
+             constructor(name,year){
+             this.name=name
+             this.year=year
+            }
+
+age(){
+let date=new Date();
+return date.getFullYear()-this.year
+
+}
+  }
+
+e1=new emp("IBRAHIM",2014)
+e2 = new emp("Pihu", 2010)
+
+document.getElementById("e1").innerHTML="Employee name:"+e1.name+ "      age:"+e1.age()
+document.getElementById("e2").innerHTML = "Employee name:" + e2.name+ "    age:" + e2.age()
+
+
+</script>
+
+
+
+</body>
+</html>

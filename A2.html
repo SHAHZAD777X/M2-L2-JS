@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="r1"></p>
+<p id="r2"></p>
+
+<script>
+
+class car{
+constructor(brand)
+{this.brand=brand}
+favourite(){
+    return "MY FAVOURITE CAR IS"+this.brand
+}
+}
+
+class car2 extends car
+{
+    constructor(brand,model)
+{super(brand);
+this.model=model
+}
+show()
+{ return this.favourite()+"  model:"+this.model}
+}
+
+let ob1=new car2("   Lamborghini","Hurricane")
+document.getElementById("r1").innerHTML=ob1.show()
+
+ let ob2 = new car2("  Lamborghini", "Hurricane")
+document.getElementById("r2").innerHTML = ob2.show()
+
+
+</script>
+
+</body>
+</html>
